@@ -13,7 +13,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * 			3. @Controller - used to indicate a controller class
  * 		2. @Configuration - used to mark a class which has beans to initialize. 
  * 				
- * 		3. @EnableAutoConfiguration - enable Spring Boot’s auto-configuration mechanism
+ * 		3. @EnableAutoConfiguration - enable Spring Bootâ€™s auto-configuration mechanism
  * 
  * */
 @SpringBootApplication
@@ -23,9 +23,9 @@ public class ApplicationStartPoint {
 		 SpringApplication.run(ApplicationStartPoint.class, args);
 	}
 	
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder app) {
-		// add more sources to the application if any.
-		return app.sources(ApplicationStartPoint.class);
-	}
+// 	protected SpringApplicationBuilder configure(SpringApplicationBuilder app) {
+// 		// add more sources to the application if any.
+// 		return app.sources(ApplicationStartPoint.class);
+// 	}
 
 }
