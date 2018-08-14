@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: springSecurityDemo Maven Webapp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: pct22
+Implementation-Vendor-Id: tatvasoft
+Build-Jdk: 1.8.0_101
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+Main-Class: com.tatva.ApplicationStartPoint
+
