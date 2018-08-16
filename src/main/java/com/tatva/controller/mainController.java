@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 //import org.apache.logging.log4j.LogManager;
 //import org.apache.logging.log4j.Logger;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,17 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class mainController {
 	
-	//private static Logger logger = LogManager.getLogger(mainController.class);
+	private static Logger logger = LogManager.getLogger(mainController.class);
 	
 	@GetMapping(path="/hello")
 	public String testing() {
-		//System.out.println("Hello world!" + logger.getLevel());
-		//logger.fatal("asjdhslkdf");
+		System.out.println("Hello world!" + logger.getLevel());
+		logger.trace("djfghaskdf");
+		logger.fatal("asjdhslkdf");
 		return null;
 		
 	}
 	
-	//@GetMapping(path="/")
+	@GetMapping(path="/")
 	public String test(HttpServletResponse res) throws IOException {
 		System.out.println("asfdhaklsjfd");
 		res.sendRedirect("hello");
