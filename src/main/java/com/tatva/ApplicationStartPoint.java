@@ -13,7 +13,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * 			3. @Controller - used to indicate a controller class
  * 		2. @Configuration - used to mark a class which has beans to initialize. 
  * 				
- * 		3. @EnableAutoConfiguration - enable Spring Boot’s auto-configuration mechanism
+ * 		3. @EnableAutoConfiguration - enable Spring Boots auto-configuration mechanism
  * 
  * */
 @SpringBootApplication

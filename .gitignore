@@ -1,0 +1,6 @@
+# for java project ignore folder list
+target
+src/main/ngapp/node_modules
+
+
+
