@@ -66,6 +66,7 @@
 		<finalName>springSecurityDemo</finalName>
 		<pluginManagement>
 			<plugins>
+				<!-- To exclude ngapp folder while compile time -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
@@ -76,6 +77,8 @@
 						</excludes>
 					</configuration>
 				</plugin>
+				
+				<!-- To exclude ngapp folder while war creation time -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-war-plugin</artifactId>
@@ -86,6 +89,8 @@
 						</excludes>
 					</configuration>
 				</plugin>
+				
+				<!-- This generates war file after running the ng build command -->
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>exec-maven-plugin</artifactId>
@@ -105,6 +110,8 @@
 								<goal>exec</goal>
 							</goals>
 						</execution>
+						
+						<!-- sets the base  href address of the app -->
 						<execution>
 							<id>exec-npm-ng-build</id>
 							<phase>generate-sources</phase>
@@ -113,7 +120,7 @@
 								<executable>ng</executable>
 								<arguments>
 									<argument>build</argument>
-									<argument>--base-href=/BookWorm/</argument>
+									<argument>--base-href=/</argument>
 								</arguments>
 							</configuration>
 							<goals>
