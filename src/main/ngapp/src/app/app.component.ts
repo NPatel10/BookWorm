@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
 	}
 
 	getHero(){
-		return this.http.get("http://192.168.0.22:8080/hello");
+		return this.http.get("http://localhost:8080/hello");
 	}
 
 }
