@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../webapp/ng",
+            "outputPath": "../webapp/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,7 @@
             ],
             "scripts": []
           },
-          "configurations": {
+          "configurations": {	
             "production": {
               "fileReplacements": [
                 {
