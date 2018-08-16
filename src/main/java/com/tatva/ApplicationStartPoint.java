@@ -23,9 +23,9 @@ public class ApplicationStartPoint {
 		 SpringApplication.run(ApplicationStartPoint.class, args);
 	}
 	
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder app) {
-		// add more sources to the application if any.
-		return app.sources(ApplicationStartPoint.class);
-	}
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder app) {
+//		// add more sources to the application if any.
+//		return app.sources(ApplicationStartPoint.class);
+//	}
 
 }
