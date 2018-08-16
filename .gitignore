@@ -1,5 +1,5 @@
 # for java project ignore folder list
-target/springSecurityDemo
+target
 src/main/ngapp/node_modules
 
 
